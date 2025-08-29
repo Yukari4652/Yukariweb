@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>yukariaiweb</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Analytics (isi dengan Measurement ID milikmu) -->
+  <script async src="no"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'GA_MEASUREMENT_ID');
+  </script>
+</head>
+<body>
+  <div class="container">
+    <!-- Profil -->
+    <header class="profile">
+      <img id="avatar" class="avatar" src="IMG_20250805_120754.png" alt="Avatar">
+      <h1 id="name">YUKARI AI</h1>
+      <p id="bio">Ini adalah bio singkat tentang saya.</p>
+      <button id="copyBio" class="btn">Salin Bio</button>
+    </header>
+
+    <!-- Link Sosial -->
+    <section class="links">
+      <h2>Temukan Saya</h2>
+      <div id="linksContainer" class="links-grid"></div>
+      <button id="copyAllLinks" class="btn">Salin Semua Link</button>
+    </section>
+
+    <!-- Galeri -->
+    <section class="gallery">
+      <h2>Galeri Foto</h2>
+      <div id="galleryContainer" class="gallery-grid"></div>
+    </section>
+
+    <!-- Form Kontak -->
+    <section class="contact">
+      <h2>Kontak Saya</h2>
+      <form id="contactForm" name="submit-to-google-sheet">
+        <input type="text" name="nama" placeholder="Nama" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="pesan" placeholder="Pesan" required></textarea>
+        <button type="submit" class="btn">Kirim</button>
+      </form>
+      <p id="formMsg"></p>
+    </section>
+
+    <!-- Donasi -->
+    <section class="donasi">
+      <h2>Dukung Saya</h2>
+      <p>Kamu bisa mendukung saya melalui link berikut:</p>
+      <a href="DANA" target="_blank" class="btn primary">Donasi via Dana</a>
+      <a href="DANA" target="_blank" class="btn primary">Donasi via Gopay</a>
+      <a href="DANA" target="_blank" class="btn primary">Donasi via saweria</a>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; <span id="year"></span> mikazuki satoru. Semua hak dilindungi.</p>
+      <button id="shareProfile" class="btn">Bagikan Profil</button>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
